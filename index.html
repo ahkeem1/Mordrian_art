@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .grid_container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 120px 155px 20px;
+      gap: 9px;
+     
+    }
+
+    .white{
+      background-color: white;
+    }
+    .item_yellow{
+      background-color: yellow;
+    }
+    .item_orange{
+      background-color: orange;
+    }
+    .white_1{
+     grid-column: span 1; 
+     background-color: red;
+    }
+    .white_2{
+      grid-row: span 1;
+      background-color: purple;
+    }
+    .white_3{
+      grid-area: 2 / 2/ 3 / 4;
+      background-color: cornflowerblue;
+    }
+    .white_4{
+      grid-row: span 2;
+      background-color: darksalmon;
+    }
+    .item_azure{
+      background-color: azure;
+      
+    }
+    .item_blue{
+      background-color: blueviolet;
+    }
+    .item_gold{
+      background-color: gold;
+    }
+    .item_green{
+      background-color: green;
+    }
+    .item_grey{
+      background-color: grey;
+    }
+    .item_pink{
+      background-color: pink;
+    }
+    .item_purple{
+      background-color: purple;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="grid_container">
+
+    <div class="item_yellow"></div>
+    <div class="item_orange"></div>
+    <div class="white_1"></div>
+    <div class="white_2"></div>
+
+    <div class="item_azure"></div>
+    <div class="white_3"></div>
+    <div class="white_4"></div>
+
+    <div class="white"></div>
+    <div class="item_blue"></div>
+    <div class="item_gold"></div>
+    <div class="item_green"></div>
+    <div class="item_grey"></div>
+
+    <div class="item_pink"></div>
+    <div class="item_purple"></div>
+
+
+
+  </div>
+</body>
+
+</html>
